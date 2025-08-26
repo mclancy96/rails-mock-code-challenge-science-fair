@@ -1,12 +1,12 @@
 $_button-background-color: $action-color;
-$_button-background-color-hover: shade($action-color, 20%);
+$_button-background-color-hover: darken($action-color, 20%);
 
-#{$all-buttons} {
+button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: $_button-background-color;
   border: 0;
   border-radius: $base-border-radius;
-  color: contrast-switch($_button-background-color);
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;

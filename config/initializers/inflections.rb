@@ -14,3 +14,8 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
+
+# Add custom inflection rules
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.irregular 'pizzeria', 'pizzerias'
+end
