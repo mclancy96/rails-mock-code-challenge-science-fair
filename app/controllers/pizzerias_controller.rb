@@ -1,4 +1,8 @@
 class PizzeriasController < ApplicationController
+
+    def index
+      @pizzerias = Pizzeria.all
+    end
   def new
     @pizzeria = Pizzeria.new
   end
