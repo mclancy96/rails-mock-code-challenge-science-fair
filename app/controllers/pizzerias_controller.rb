@@ -1,8 +1,12 @@
 class PizzeriasController < ApplicationController
+  def index
+    @pizzerias = Pizzeria.all
+  end
 
-    def index
-      @pizzerias = Pizzeria.all
-    end
+  def show
+    @pizzeria = Pizzeria.find(params[:id])
+  end
+
   def new
     @pizzeria = Pizzeria.new
   end
@@ -12,16 +16,9 @@ class PizzeriasController < ApplicationController
     redirect_to @pizzeria
   end
 
-  def show
-    @pizzeria = Pizzeria.find(params[:id])
-  end
-
-  def index
-    @pizzerias = Pizzeria.all
-  end
-
   private
+
   def pizzeria_params
-    params.require(:pizzeria).permit(:name,:address)
+    params.require(:pizzeria).permit(:name, :address)
   end
 end

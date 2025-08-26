@@ -1,0 +1,25 @@
+// Import all SCSS files from the base directory
+@import "base/variables";
+@import "base/base";
+@import "base/buttons";
+@import "base/forms";
+@import "base/layout";
+@import "base/lists";
+@import "base/media";
+@import "base/tables";
+@import "base/typography";
+
+// Custom styles
+.container {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.form-container {
+  width: 500px;
+}
+
+.pizza_logo {
+  width: 100px;
+}
