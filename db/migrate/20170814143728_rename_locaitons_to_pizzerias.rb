@@ -1,4 +1,4 @@
-class RenameLocaitonsToPizzerias < ActiveRecord::Migration[5.1]
+class RenameLocaitonsToPizzerias < ActiveRecord::Migration[7.1]
   def change
     rename_table :locations, :pizzerias
   end
