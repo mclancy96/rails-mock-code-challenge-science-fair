@@ -1,0 +1,8 @@
+<h1 style='margin-top:100px'> Record a new Fair in NYC</h1>
+<div class='form-container'>
+  <%= form_with(model: @fair) do |f| %>
+    <label>Fair Name: <%= f.text_field :name %></label><br />
+    <label>Address: <%= f.text_field :address %></label><br />
+    <%= f.submit %>
+  <% end %>
+</div>

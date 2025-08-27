@@ -1,0 +1,10 @@
+<h1 style='margin-top:100px;font-size:2rem'>Our official fair directory (<%= link_to 'Click here to add a new Fair', new_fair_path %>)</h1>
+
+<% @fairs.each do |fair| %>
+  <h1 style='font-size:1.5rem;margin-top:50px'>Fair Name:
+    <%= link_to fair do  %>
+      <%= fair.name %>
+    <% end %>
+  </h1>
+  <p>Address: <%= fair.address %></p>
+<% end %>

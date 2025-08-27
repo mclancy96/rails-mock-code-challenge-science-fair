@@ -1,5 +1,5 @@
-class RenameLocationsToPizzerias < ActiveRecord::Migration[7.1]
+class RenameLocationsToFairs < ActiveRecord::Migration[7.1]
   def change
-    rename_table :locations, :pizzerias
+    rename_table :locations, :fairs
   end
 end

@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :pizzerias, only: %i[index show new create]
+  resources :fairs, only: %i[index show new create]
 end
